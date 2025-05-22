@@ -13,15 +13,11 @@ const CardGrid = styled.div`
   margin: 0 auto;
 `;
 
-const PokemonList = ({ addPokemon }) => {
+const PokemonList = () => {
   return (
     <CardGrid>
       {MOCK_DATA.map((pokemon) => (
-        <PokemonCard
-          key={pokemon.id}
-          pokemon={pokemon}
-          addPokemon={addPokemon}
-        />
+        <PokemonCard key={pokemon.id} pokemon={pokemon} />
       ))}
     </CardGrid>
   );

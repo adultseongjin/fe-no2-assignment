@@ -8,6 +8,7 @@ import {
   Button as RemoveButton,
 } from "./styles/CardStyles";
 import { useNavigate } from "react-router-dom";
+import { usePokemon } from "../context/PokemonContext";
 
 const Wrapper = styled.div`
   background-color: white;
@@ -37,7 +38,8 @@ const PokemonList = styled.div`
   justify-content: center;
 `;
 
-const Dashboard = ({ selectedPokemons, removePokemon }) => {
+const Dashboard = () => {
+  const { selectedPokemons, removePokemon } = usePokemon();
   const navigate = useNavigate();
 
   return (
