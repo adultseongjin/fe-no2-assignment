@@ -1,6 +1,6 @@
 import React from "react";
 import PokemonCard from "./PokemonCard";
-import { MOCK_DATA } from "../MOCK_DATA";
+import { MOCK_DATA } from "../mock";
 import styled from "styled-components";
 
 const CardGrid = styled.div`

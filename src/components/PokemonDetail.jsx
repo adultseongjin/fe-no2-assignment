@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { MOCK_DATA } from "../MOCK_DATA";
+import { MOCK_DATA } from "../mock";
 import styled from "styled-components";
 
 const Container = styled.div`
